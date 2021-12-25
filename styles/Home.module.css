@@ -25,4 +25,35 @@
 	background-color: rosybrown;
 }
 
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
 
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 8px;
+  background-color: #333;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-7px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-16px, -16px) ;
+}
