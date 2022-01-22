@@ -32,9 +32,9 @@ export default function Home() {
       <main className={styles.pages}>
         <style>
           @import
-          url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");{" "}
+          url(https://fonts.googleapis.com/css2?family=Dongle&display=swap);{" "}
           @import
-          url("https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&display=swap");
+          url(https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&display=swap);
         </style>{" "}
         <section className={styles.section__1}>
           <h2> Shoshana Yaswen </h2> <h3> Software Developer </h3>{" "}
