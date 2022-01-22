@@ -1,50 +1,118 @@
 .pages {
-	height: 100vh;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .pages section {
-	height: 100vh;
-	scroll-snap-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: gainsboro;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
 }
 
-.pages section:nth-child(2n) {
-	background-color: lavender;
+.section__1 {
+  height: 100vh;
+  font-family: "Dongle";
+  font-size: 80px;
+  color: #003049;
 }
 
-.pages section:nth-child(3n) {
-	background-color: burlywood;
+.section__2 {
+  font-family: "Lexend";
+  font-size: 30px;
+  color: #003049;
+
+  height: 100vh;
+  background-image: url("../styles/images/geometry.png");
 }
 
-.pages section:nth-child(4n) {
-	background-color: rosybrown;
+.section__3 {
+  font-family: "Lexend";
+  font-size: 30px;
+  color: #003049;
+
+  height: 100vh;
+  background-color: #ededed;
+}
+
+.section__4 {
+  font-family: "Lexend";
+  font-size: 30px;
+  color: #003049;
+
+  height: 100vh;
+  background: red;
+}
+
+.section__5 {
+  font-family: "Lexend";
+  font-size: 30px;
+  color: #003049;
+
+  height: 5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.dropdown.show .dropdown__content {
+  display: inline-block;
+  padding: 80px;
+  height: 75%;  
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+.dropdown .dropdown__content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(60, 0, 255, 1) 0%,
+    rgba(255, 182, 0, 1) 100%
+  );
+  font-family: "Lexend";
+  color: #003049;
+  font-size: 20pt;
+}
+
+.dropdown__content{
+  line-height: 200%;
+  text-rendering: center;
+
 }
 
 .hamburger {
+  z-index: 5;
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 10px;
+  right: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 40px;
   height: 8px;
-  background-color: #333;
+  background-color: #003049;
   margin: 8px 0;
   transition: 0.4s;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-7px, 6px) ;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7px, 6px);
 }
 
 /* Fade out the second bar */
@@ -54,6 +122,6 @@
 
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-16px, -16px) ;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-16px, -16px);
 }
