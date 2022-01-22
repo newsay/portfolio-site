@@ -32,9 +32,9 @@ export default function Home() {
       <main className={styles.pages}>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');{" "}
+          url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");{" "}
           @import
-          url('https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&display=swap');
+          url("https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&display=swap");
         </style>{" "}
         <section className={styles.section__1}>
           <h2> Shoshana Yaswen </h2> <h3> Software Developer </h3>{" "}
@@ -47,21 +47,21 @@ export default function Home() {
         </section>{" "}
         <section className={styles.section__4}>
             <h2> CONTACT </h2>
-            <label for="fname">Name</label>
+            <label htmlFor="fname">Name</label>
             <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Enter name"
             ></input>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
                 type="text"
                 id="email"
                 name="email"
                 placeholder="Enter email"
             ></input>
-                <label for="email">Message</label>
+                <label htmlFor="email">Message</label>
                 <input
                 type="text"
                 id="message"
