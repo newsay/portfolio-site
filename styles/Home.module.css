@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&family=Work+Sans:wght@100&display=swap);
+
 .pages {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+
 }
 
 .pages section {
@@ -10,84 +13,18 @@
   display: flex;
 }
 
-.home {
-  justify-content: center;
-
-  flex-direction: column;
-
-  height: 100vh;
-  font-family: "Dongle";
-  font-size: 8vmin;
-  color: #003049;
-  line-height: 0%;
-  align-items: center;
-  background-image: url("../public/geometry.png");
-
-}
-
-.cat {
-height: 10vmin;
-min-width: 100px;
-min-height: 100px;
-border: 16px solid transparent;
-border-image: linear-gradient(45deg, red , yellow);
-border-image-slice: 1;
-border-width: 10px;
-border-radius: 50%;
-
-}
-
-
-.work {
-  justify-content: center;
-  font-family: "Lexend";
-  font-size: 2vmin;
-  color: #003049;
-  height: 100vh;
-  background-color: #ededed;
-
-  align-items: center;
-
-}
-
-.about {
-  justify-content: center;
-
-  font-family: "Lexend";
-  font-size: 2vmin;
-  color: #003049;
-  height: 100vh;
-  align-items: center;
-  background-image: url("../public/geometry.png");
-
-
-}
-
-.contact {
-  justify-content: center;
-
-  flex-direction: column;
-
-  font-family: "Lexend";
-  font-size: 2vmin;
-  color: #003049;
-  height: 100vh;
-  background-image: url("../public/geometry.png");
-  align-items: center;
-  background: linear-gradient(0deg, #22C1C3 0%, #ffc200 100%);
-}
-
 .links {
-  display: flex;
+  width: 100%;
+  min-height: 40px;
+position: fixed;
+z-index: 4;
   justify-content: space-between;
   font-family: "Dongle";
-  padding-left: 3.5vmin;
-  padding-right: 3.5vmin;
-  padding-top: 3.5vmin;
+  padding:10px;
   align-content: center;
   flex-direction: row;
   color: #bbbbbb;
-  height: 7vmin;
+  height: 4vmin;
   background: linear-gradient(
     0deg,
     #192930 100%,
@@ -95,21 +32,23 @@ border-radius: 50%;
   );
 }
 
-.copyright{
-  font-size: 1.2vmin;
-  font-family: 'Work Sans', sans-serif;
+.icon{
+  padding-left: 1.8vmin;
+  height: 40px;
 }
 
-.icon{
-  padding-left: 2vmin;
-  height: 4vmin;
+.icon:hover{
+  filter: invert(72%) sepia(93%) saturate(594%) hue-rotate(138deg) brightness(92%) contrast(97%);
+  opacity:0.3;
 }
 
 .dropdown.show .dropdown__content {
   display: inline-block;
-  padding: 80px;
-  height: 50vmin;  
-  padding-top: 100px;}
+  height: 90vmin;  
+  width: 28vmin;
+  position: fixed;
+  z-index: 3;
+}  
 
 .dropdown .dropdown__content {
   display: none;
@@ -117,7 +56,7 @@ border-radius: 50%;
   position: absolute;
   right: 0;
   top: 0;
-  background: linear-gradient(0deg, rgba(131,58,180,0) 0%, #d53369 30%, #ffc200 100%
+  background: linear-gradient(30deg, rgba(0,0,0,0) 15%, rgba(255, 0, 0, 0.75) 60%, #e5ff00 80%, rgba(255, 0, 0, 0.8) 100%
   );
   font-family: "Lexend";
   color: #003049;
@@ -126,8 +65,12 @@ border-radius: 50%;
 
 .dropdown__content{
   line-height: 200%;
-  text-rendering: center;
+padding-top: 100px;
+  text-indent: 8vmin;
+}
 
+.dropdown__content > div:hover{
+  background-color: rgba(0, 0, 0, 0.10);
 }
 
 .hamburger {
@@ -135,8 +78,13 @@ border-radius: 50%;
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 2px;
+  right: 27px;
+}
+
+.hamburger:hover{
+  filter: invert(72%) sepia(93%) saturate(594%) hue-rotate(138deg) brightness(92%) contrast(97%);
+  opacity:0.3;
 }
 
 .bar1,
@@ -144,9 +92,25 @@ border-radius: 50%;
 .bar3 {
   width: 40px;
   height: 8px;
-  background-color: #003049;
+  position: relative;
+  background-position: 0px;
   margin: 8px 0;
   transition: 0.4s;
+}
+
+
+.home,
+.bar1,
+.bar2,
+.bar3 {
+  background: linear-gradient(124deg, #e3e81d, #1ddde8, #dd00f3);
+  background-size: 1000%, 1000%;
+
+  -webkit-animation: rainbow 40s ease infinite;
+  -z-animation: rainbow 40s ease infinite;
+  -o-animation: rainbow 40s ease infinite;
+  animation: rainbow 40s ease infinite;
+  
 }
 
 /* Rotate first bar */
@@ -164,4 +128,110 @@ border-radius: 50%;
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-16px, -16px);
+
 }
+
+.home { 
+  position: relative;
+  background-position: 0px;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Dongle";
+  font-size: 8vmin;
+  color: #003049;
+  line-height: 0%;
+  align-items: center;
+
+
+}
+
+.cat {
+height: 10vmin;
+min-width: 100px;
+min-height: 100px;
+border-style: solid;
+border-width: 10px;
+border-radius: 50%;
+}
+
+
+.work {
+  justify-content: center;
+  font-family: "Lexend";
+  font-size: 2vmin;
+  color: #003049;
+  height: 100vh;
+  background-color: #ededed;
+  align-items: center;
+
+}
+
+.about {
+  justify-content: center;
+  font-family: "Lexend";
+  font-size: 2vmin;
+  color: #003049;
+  height: 100vh;
+  align-items: center;
+  background-image: url("../public/geometry.png");
+
+
+}
+
+.contact {
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lexend";
+  font-size: 2vmin;
+  color: #003049;
+  height: 100vh;
+  background-image: url("../public/geometry.png");
+  align-items: center;
+  background: linear-gradient(0deg, #22C1C3 0%, #ffc200 100%);
+}
+
+
+
+.copyright{
+
+  
+  font-size: 1.2vmin;
+  font-family: 'Work Sans', sans-serif;
+  background-clip: text;
+background-image: linear-gradient(124deg, #e3e81d, #1ddde8, #dd00f3);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 25s ease infinite;
+-z-animation: rainbow 25s ease infinite;
+-o-animation: rainbow 25s ease infinite;
+  animation: rainbow 25s ease infinite;
+
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+

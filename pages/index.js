@@ -8,7 +8,18 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.dropdown}>
+              <title>Work in progress</title>
+
+
+      <main className={styles.pages}>
+        <section className={styles.links}>
+          <div>
+            <a href="https://github.com/newsay/"><img className={styles.icon} src="github.png" /></a>
+            <a href="http://www.linkedin.com/in/newsay/"><img className={styles.icon} src="linkedin.png" /></a>
+            <a href="mailto:syaswen@gmail.com"><img className={styles.icon} src="mail.png" /></a>
+            <a href="https://twitter.com/y_swen/"><img className={styles.icon} src="twitter.png" /></a>
+          
+          <div className={styles.dropdown}>
         <div className={styles.hamburger} onClick={myFunction}>
           <div className={styles.bar1}> </div>{" "}
           <div className={styles.bar2}> </div>{" "}
@@ -26,17 +37,13 @@ export default function Home() {
           </div>{" "}
           <div>
             <a href="#contact"> CONTACT </a>{" "}
+            </div>
           </div>{" "}
         </div>{" "}
       </div>
-      <main className={styles.pages}>
-        <style>
-          @import url(https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&family=Work+Sans:wght@100&display=swap);
-        </style>
+        </section>
         <section className={styles.home}>
-        <title>Work in progress</title>
-
-          <img className={styles.cat} src="cat.png" />
+          <img className={styles.cat} src="cat.jpg" />
           <h2 id="home"> Shoshana Yaswen </h2> <h3> Software Developer </h3>{" "}
         </section>{" "}
       <section className={styles.work}>
@@ -65,15 +72,7 @@ export default function Home() {
           <textarea>
             Enter message
           </textarea>
-        </section>
-        <section className={styles.links}>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
-          <div className={styles.linkbox}>
-            <a href="https://github.com/newsay/"><img className={styles.icon} src="github.png" /></a>
-            <a href="http://www.linkedin.com/in/newsay/"><img className={styles.icon} src="linkedin.png" /></a>
-            <a href="mailto:syaswen@gmail.com"><img className={styles.icon} src="mail.png" /></a>
-            <a href="https://twitter.com/y_swen/"><img className={styles.icon} src="twitter.png" /></a>
-          </div>
         </section>
       </main>
     </div>
