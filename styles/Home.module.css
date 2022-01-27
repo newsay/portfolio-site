@@ -16,8 +16,8 @@
 .links {
   width: 100%;
   min-height: 40px;
-position: fixed;
-z-index: 4;
+  position: fixed;
+  z-index: 4;
   justify-content: space-between;
   font-family: "Dongle";
   padding:10px;
@@ -25,16 +25,14 @@ z-index: 4;
   flex-direction: row;
   color: #bbbbbb;
   height: 4vmin;
-  background: linear-gradient(
-    0deg,
-    #192930 100%,
-    #414141 100%
-  );
+  background: rgba(7, 17, 31, 0.9);
 }
 
 .icon{
   padding-left: 1.8vmin;
   height: 40px;
+  transition-duration: 0.4s;
+
 }
 
 .icon:hover{
@@ -44,20 +42,18 @@ z-index: 4;
 
 .dropdown.show .dropdown__content {
   display: inline-block;
-  height: 90vmin;  
+  height: 100vh;  
   width: 28vmin;
-  position: fixed;
+  position: absolute;
   z-index: 3;
 }  
 
 .dropdown .dropdown__content {
   display: none;
   flex-direction: column;
-  position: absolute;
   right: 0;
   top: 0;
-  background: linear-gradient(30deg, rgba(0,0,0,0) 15%, rgba(255, 0, 0, 0.75) 60%, #e5ff00 80%, rgba(255, 0, 0, 0.8) 100%
-  );
+  background: rgba(255, 255, 255, 0.75);
   font-family: "Lexend";
   color: #003049;
   font-size: 20pt;
@@ -65,12 +61,20 @@ z-index: 4;
 
 .dropdown__content{
   line-height: 200%;
-padding-top: 100px;
+  padding-top: 100px;
   text-indent: 8vmin;
 }
 
 .dropdown__content > div:hover{
   background-color: rgba(0, 0, 0, 0.10);
+}
+
+
+@media only screen and (max-width: 600px){
+  .dropdown.show .dropdown__content{
+    display: flex;
+  width: 100%;
+}
 }
 
 .hamburger {
@@ -80,10 +84,12 @@ padding-top: 100px;
   position: absolute;
   top: 2px;
   right: 27px;
+  transition-duration: 0.4s;
+
+  
 }
 
 .hamburger:hover{
-  filter: invert(72%) sepia(93%) saturate(594%) hue-rotate(138deg) brightness(92%) contrast(97%);
   opacity:0.3;
 }
 
@@ -97,7 +103,6 @@ padding-top: 100px;
   margin: 8px 0;
   transition: 0.4s;
 }
-
 
 .home,
 .bar1,
@@ -113,18 +118,15 @@ padding-top: 100px;
   
 }
 
-/* Rotate first bar */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-7px, 6px);
 }
 
-/* Fade out the second bar */
 .change .bar2 {
   opacity: 0;
 }
 
-/* Rotate last bar */
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-16px, -16px);
@@ -157,13 +159,43 @@ border-radius: 50%;
 
 
 .work {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   font-family: "Lexend";
-  font-size: 2vmin;
   color: #003049;
   height: 100vh;
   background-color: #ededed;
   align-items: center;
+  flex-direction: row;
+}
+
+.workbox{
+  width: 60vmin;
+  text-align: justify;
+  font-size: calc(12px + .5vw);
+  padding: 20px;
+}
+
+.lang{
+  width: 10vmin;
+  margin: 4px;
+max-height: 10vmin;
+}
+
+.langs{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top:10px;
+  align-items: center;
+}
+
+.lang:hover{
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.493)) ;
 
 }
 
@@ -180,22 +212,34 @@ border-radius: 50%;
 }
 
 .contact {
+    font-family: "Lexend";
+
   justify-content: center;
   flex-direction: column;
   font-family: "Lexend";
   font-size: 2vmin;
   color: #003049;
   height: 100vh;
-  background-image: url("../public/geometry.png");
   align-items: center;
   background: linear-gradient(0deg, #22C1C3 0%, #ffc200 100%);
 }
 
+.submit{
+    font-family: "Lexend";
+background: rgba(0, 0, 0, 0.75);
+border-width: 0px;
+padding: 10px;
+color: white;
+margin: 10px;
+transition-duration: 0.4s;
 
+}
+
+.submit:hover{
+opacity: 40%;
+}
 
 .copyright{
-
-  
   font-size: 1.2vmin;
   font-family: 'Work Sans', sans-serif;
   background-clip: text;
@@ -233,5 +277,4 @@ background-size: 1800% 1800%;
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
-
 
