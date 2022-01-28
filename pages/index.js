@@ -44,7 +44,10 @@ export default function Home() {
         </section>
         <section className={styles.home}>
           <img className={styles.cat} src="cat.jpg" />
-          <h2 id="home"> Shoshana Yaswen </h2> <h3> Software Developer </h3>{" "}
+          <div className={styles.namebox}>
+          <div className={styles.name}><text id="home">SHOSHANA YASWEN</text></div>
+          <div className={styles.tagline}><text><i> Software Developer in Washington, D.C.</i></text></div>
+          </div>
         </section>{" "}
         <section className={styles.work}>
           <div className={styles.workbox}>
@@ -73,15 +76,7 @@ export default function Home() {
               Donec feugiat ligula suscipit dui mattis, a porttitor orci aliquet.
               Ut ullamcorper arcu a erat sollicitudin, quis maximus odio sollicitudin.
               Sed arcu enim, congue sed lectus pulvinar, varius ullamcorper ipsum. 
-              Quisque auctor mauris et ipsum lobortis, sed accumsan lacus tristique. 
-              Mauris accumsan pulvinar neque non cursus. Cras accumsan commodo ipsum 
-              sed lacinia. Praesent eu ultricies mauris. Vestibulum accumsan ornare 
-              sem eu aliquam. Proin blandit porta purus sed commodo. Class aptent 
-              taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
-              himenaeos. Duis nibh nisi, hendrerit sed nunc at, maximus scelerisque 
-              nibh. Maecenas finibus, velit eu convallis vulputate, arcu erat volutpat 
-              arcu, eu posuere justo odio a arcu. Phasellus finibus cursus convallis. 
-              Aliquam tempus volutpat hendrerit. 
+              Quisque auctor mauris et ipsum lobortis, sed accumsan lacus tristique.
               </text>
               </div>
         </section>
@@ -91,23 +86,26 @@ export default function Home() {
         <section className={styles.contact}>
 
           <h2 id="contact"> CONTACT </h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-  {/* You still need to add the hidden input with the form name to your JSX form */}
-  <input type="hidden" name="form-name" value="contact" />
-  <p>
+          <form className={styles.contactf} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="Contact" />
+  <div className={styles.input12}>
+  <label for="fname">Name: </label>
+    <input className={styles.inputs} type="text" id="name" name="name" placeholder="Enter name" maxlength="100"/>
+    </div>
+  <div className={styles.input12}>
     <label>
-      Email: <input type="text" name="name" />
+      Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxlength="100"/>
     </label>
-  </p>
-  <p>
+  </div>
+  <div className={styles.input12}>
     <label>
-      Message: <textarea name="message"></textarea>
+      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxlength="2000"></textarea>
     </label>
-  </p>
+  </div>
   <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <div>
+    <button className={styles.submit} type="submit">Submit</button>
+  </div>
 </form>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
         </section>

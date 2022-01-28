@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&family=Work+Sans:wght@100&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Lexend:wght@500&family=Oswald:wght@600&family=Playfair+Display:ital@1&family=Raleway:wght@300&family=Work+Sans:wght@100&display=swap');
 
 .pages {
   height: 100vh;
@@ -19,7 +19,6 @@
   position: fixed;
   z-index: 4;
   justify-content: space-between;
-  font-family: "Dongle";
   padding:10px;
   align-content: center;
   flex-direction: row;
@@ -108,12 +107,10 @@
 .bar1,
 .bar2,
 .bar3 {
-  background: linear-gradient(124deg, #e3e81d, #1ddde8, #dd00f3);
+  background: linear-gradient(124deg, #fdffc7, #a9f5ff, #fcb8cf);
   background-size: 1000%, 1000%;
 
   -webkit-animation: rainbow 40s ease infinite;
-  -z-animation: rainbow 40s ease infinite;
-  -o-animation: rainbow 40s ease infinite;
   animation: rainbow 40s ease infinite;
   
 }
@@ -134,19 +131,36 @@
 }
 
 .home { 
-  position: relative;
-  background-position: 0px;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  font-family: "Dongle";
-  font-size: 8vmin;
   color: #003049;
-  line-height: 0%;
   align-items: center;
-
+  text-align: center;
 
 }
+
+.name{
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.5vmax;
+  background-clip: text;
+  background-image: linear-gradient(135deg, #e3e81d, #1ddde8, #dd00f3);
+  opacity: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 25s ease infinite;
+  -z-animation: rainbow 25s ease infinite;
+  -o-animation: rainbow 25s ease infinite;
+    animation: rainbow 25s ease infinite;
+}
+
+.tagline{
+  font-family: 'Playfair Display', serif;
+  font-size: 2vmax;
+  opacity: 90%;
+}
+
 
 .cat {
 height: 10vmin;
@@ -213,34 +227,66 @@ max-height: 10vmin;
 
 .contact {
     font-family: "Lexend";
-
   justify-content: center;
   flex-direction: column;
   font-family: "Lexend";
-  font-size: 2vmin;
+  font-size: calc(12px + .5vw);
+
   color: #003049;
   height: 100vh;
   align-items: center;
   background: linear-gradient(0deg, #22C1C3 0%, #ffc200 100%);
+  text-align: center;
 }
 
 
+.contactf > div{
+  padding: 5px;
+  width: 50vmin;
+}
+
+.input12{
+text-align: left;
+}
+
+.inputs{
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  border-style: hidden;
+
+}
+
+.inputmes{
+  margin-top: 5px;
+  width: 100%;
+  height: 15vmin;
+  padding: 5px;
+  border-style: hidden;
+  resize: vertical;
+}
+
+
+.submit{
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  border-style: hidden;
+  cursor: pointer;
+  width: 30%;
+  padding: 3%;
+    text-align: center;
+
+}
+
+.submit:hover {
+  opacity: 50%;
+}
 
 .copyright{
   font-size: 1.2vmin;
   font-family: 'Work Sans', sans-serif;
-  background-clip: text;
-background-image: linear-gradient(124deg, #e3e81d, #1ddde8, #dd00f3);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 
-
-background-size: 1800% 1800%;
-
--webkit-animation: rainbow 25s ease infinite;
--z-animation: rainbow 25s ease infinite;
--o-animation: rainbow 25s ease infinite;
-  animation: rainbow 25s ease infinite;
 
 }
 
