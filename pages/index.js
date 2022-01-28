@@ -101,7 +101,7 @@ export default function Home() {
   </p>
   <div data-netlify-recaptcha="true"></div>
   <p>
-    <button type="submit">Send</button>
+    <button className={styles.submit} type="submit">Send</button>
   </p>
 </form>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
