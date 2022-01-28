@@ -88,24 +88,24 @@ export default function Home() {
           <h2 id="contact"> CONTACT </h2>
           <form className={styles.contactf} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
   <input type="hidden" name="form-name" value="Contact" />
-  <div className={styles.input12}>
+  <p>
   <label htmlFor="fname">Name: </label>
     <input className={styles.inputs} type="text" id="name" name="name" placeholder="Enter name" maxLength="100"/>
-    </div>
-  <div className={styles.input12}>
+    </p>
+  <p>
     <label>
       Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxLength="100"/>
     </label>
-  </div>
-  <div className={styles.input12}>
+  </p>
+  <p>
     <label>
-      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxLength="2000"></textarea>
+      Message: <textarea className={styles.inputs} name="message" placeholder="Enter message" maxLength="2000"></textarea>
     </label>
-  </div>
+  </p>
   <div data-netlify-recaptcha="true"></div>
-  <div>
+  <p>
     <button className={styles.submit} type="submit">Submit</button>
-  </div>
+  </p>
 </form>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
         </section>
