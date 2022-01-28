@@ -96,7 +96,7 @@ export default function Home() {
   </p>
   <p>
     <label>
-      Message: <textarea name="message"></textarea>
+      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxlength="2000"></textarea>
     </label>
   </p>
   <div data-netlify-recaptcha="true"></div>
