@@ -89,17 +89,17 @@ export default function Home() {
           <form className={styles.contactf} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
   <input type="hidden" name="form-name" value="Contact" />
   <div className={styles.input12}>
-  <label for="fname">Name: </label>
-    <input className={styles.inputs} type="text" id="name" name="name" placeholder="Enter name" maxlength="100"/>
+  <label htmlFor="fname">Name: </label>
+    <input className={styles.inputs} type="text" id="name" name="name" placeholder="Enter name" maxLength="100"/>
     </div>
   <div className={styles.input12}>
     <label>
-      Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxlength="100"/>
+      Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxLength="100"/>
     </label>
   </div>
   <div className={styles.input12}>
     <label>
-      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxlength="2000"></textarea>
+      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxLength="2000"></textarea>
     </label>
   </div>
   <div data-netlify-recaptcha="true"></div>
