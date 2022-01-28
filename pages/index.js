@@ -91,21 +91,24 @@ export default function Home() {
         <section className={styles.contact}>
 
           <h2 id="contact"> CONTACT </h2>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  {/* You still need to add the hidden input with the form name to your JSX form */}
+  <input type="hidden" name="form-name" value="contact" />
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
+    <label>
+      Email: <input type="text" name="name" />
+    </label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-    </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>
+      Message: <textarea name="message"></textarea>
+    </label>
   </p>
+  <div data-netlify-recaptcha="true"></div>
   <p>
     <button type="submit">Send</button>
   </p>
 </form>
-          <h3>Thanks for visiting!</h3>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
         </section>
       </main>

@@ -224,20 +224,7 @@ max-height: 10vmin;
   background: linear-gradient(0deg, #22C1C3 0%, #ffc200 100%);
 }
 
-.submit{
-    font-family: "Lexend";
-background: rgba(0, 0, 0, 0.75);
-border-width: 0px;
-padding: 10px;
-color: white;
-margin: 10px;
-transition-duration: 0.4s;
 
-}
-
-.submit:hover{
-opacity: 40%;
-}
 
 .copyright{
   font-size: 1.2vmin;
