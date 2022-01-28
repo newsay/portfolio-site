@@ -44,7 +44,10 @@ export default function Home() {
         </section>
         <section className={styles.home}>
           <img className={styles.cat} src="cat.jpg" />
-          <h2 id="home"> Shoshana Yaswen </h2> <h3> Software Developer </h3>{" "}
+          <div className={styles.namebox}>
+          <div className={styles.name}><text id="home">SHOSHANA YASWEN</text></div>
+          <div className={styles.tagline}><text><i> Software Developer in Washington, D.C.</i></text></div>
+          </div>
         </section>{" "}
         <section className={styles.work}>
           <div className={styles.workbox}>
@@ -73,15 +76,7 @@ export default function Home() {
               Donec feugiat ligula suscipit dui mattis, a porttitor orci aliquet.
               Ut ullamcorper arcu a erat sollicitudin, quis maximus odio sollicitudin.
               Sed arcu enim, congue sed lectus pulvinar, varius ullamcorper ipsum. 
-              Quisque auctor mauris et ipsum lobortis, sed accumsan lacus tristique. 
-              Mauris accumsan pulvinar neque non cursus. Cras accumsan commodo ipsum 
-              sed lacinia. Praesent eu ultricies mauris. Vestibulum accumsan ornare 
-              sem eu aliquam. Proin blandit porta purus sed commodo. Class aptent 
-              taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
-              himenaeos. Duis nibh nisi, hendrerit sed nunc at, maximus scelerisque 
-              nibh. Maecenas finibus, velit eu convallis vulputate, arcu erat volutpat 
-              arcu, eu posuere justo odio a arcu. Phasellus finibus cursus convallis. 
-              Aliquam tempus volutpat hendrerit. 
+              Quisque auctor mauris et ipsum lobortis, sed accumsan lacus tristique.
               </text>
               </div>
         </section>
