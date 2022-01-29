@@ -91,7 +91,7 @@ export default function Home() {
   <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>
-      Name: <input className={styles.inputs} type="text" name="name" placeholder="Enter name" maxlength="100"/>
+      Name: <input className={styles.inputs} type="text" name="name" placeholder="Enter name" maxLength="100"/>
     </label>
   </p>
   <p>
