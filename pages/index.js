@@ -45,40 +45,40 @@ export default function Home() {
         <section className={styles.home}>
           <img className={styles.cat} src="cat.jpg" />
           <div className={styles.namebox}>
-          <div className={styles.name}><text id="home">SHOSHANA YASWEN</text></div>
-          <div className={styles.tagline}><text><i> Software Developer in Washington, D.C.</i></text></div>
+            <div className={styles.name}><text id="home">SHOSHANA YASWEN</text></div>
+            <div className={styles.tagline}><text><i> Software Developer in Washington, D.C.</i></text></div>
           </div>
         </section>{" "}
         <section className={styles.work}>
           <div className={styles.workbox}>
-            <text>Phasellus finibus cursus convallis. 
-              Aliquam tempus volutpat hendrerit. 
-              </text>
-              <div className={styles.langs}>
-              <img className={styles.lang} src="java.png"/>
-              <img className={styles.lang} src="html.png"/>
-              <img className={styles.lang} src="css.png"/>
-              <img className={styles.lang} src="js.png"/>
-              <img className={styles.lang} src="js.png"/>
-              <img className={styles.lang} src="js.png"/>
-              <img className={styles.lang} src="js.png"/>
-              <img className={styles.lang} src="js.png"/>
-              <img className={styles.lang} src="aws.png"/>
-              <img className={styles.lang} src="oracle.png"/>
+            <text>Phasellus finibus cursus convallis.
+              Aliquam tempus volutpat hendrerit.
+            </text>
+            <div className={styles.langs}>
+              <img className={styles.lang} src="java.png" />
+              <img className={styles.lang} src="html.png" />
+              <img className={styles.lang} src="css.png" />
+              <img className={styles.lang} src="js.png" />
+              <img className={styles.lang} src="js.png" />
+              <img className={styles.lang} src="js.png" />
+              <img className={styles.lang} src="js.png" />
+              <img className={styles.lang} src="js.png" />
+              <img className={styles.lang} src="aws.png" />
+              <img className={styles.lang} src="oracle.png" />
             </div>
 
-              </div>
-              <div className={styles.workbox}>
-              <h2 id="work"> WORK </h2>
-              <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <div className={styles.workbox}>
+            <h2 id="work"> WORK </h2>
+            <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Donec placerat metus nec eros pulvinar consectetur. Pellentesque
               at libero velit. Pellentesque placerat augue quis tincidunt vulputate.
               Donec feugiat ligula suscipit dui mattis, a porttitor orci aliquet.
               Ut ullamcorper arcu a erat sollicitudin, quis maximus odio sollicitudin.
-              Sed arcu enim, congue sed lectus pulvinar, varius ullamcorper ipsum. 
+              Sed arcu enim, congue sed lectus pulvinar, varius ullamcorper ipsum.
               Quisque auctor mauris et ipsum lobortis, sed accumsan lacus tristique.
-              </text>
-              </div>
+            </text>
+          </div>
         </section>
         <section className={styles.about}>
           <h2 id="about"> ABOUT </h2>{" "}
@@ -86,29 +86,37 @@ export default function Home() {
         <section className={styles.contact}>
 
           <h2 id="contact"> CONTACT </h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-  {/* You still need to add the hidden input with the form name to your JSX form */}
-  <input type="hidden" name="form-name" value="contact" />
-  <p>
-    <label>
-      Name: <input className={styles.inputs} type="text" name="name" placeholder="Enter name" maxLength="100"/>
-    </label>
-  </p>
-  <p>
-    <label>
-      Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxLength="100"/>
-    </label>
-  </p>
-  <p>
-    <label>
-      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxLength="2000"></textarea>
-    </label>
-  </p>
-  <div data-netlify-recaptcha="true"></div>
-  <p>
-    <button className={styles.submit} type="submit">Submit</button>
-  </p>
-</form>
+          <div >
+          <form className={styles.contactf} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            {/* You still need to add the hidden input with the form name to your JSX form */}
+            <input type="hidden" name="form-name" value="contact" />
+            <div className={styles.input12}>
+            <p>
+              <label>
+                Name: <input className={styles.inputs} type="text" name="name" placeholder="Enter name" maxLength="100" />
+              </label>
+            </p>
+            </div>
+            <div className={styles.input12}>
+            <p>
+              <label>
+                Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxLength="100" />
+              </label>
+            </p>
+            </div>
+            <div className={styles.input12}>
+            <p>
+              <label>
+                Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxLength="2000"></textarea>
+              </label>
+            </p>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <p>
+              <button className={styles.submit} type="submit">Submit</button>
+            </p>
+          </form>
+          </div>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
         </section>
       </main>
