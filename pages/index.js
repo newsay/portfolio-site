@@ -91,17 +91,22 @@ export default function Home() {
   <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>
-      Email: <input type="text" name="name" />
+      Name: <input className={styles.inputs} type="text" name="name" placeholder="Enter name" maxlength="100"/>
     </label>
   </p>
   <p>
     <label>
-      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxlength="2000"></textarea>
+      Email: <input className={styles.inputs} type="text" name="email" placeholder="Enter email" maxLength="100"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Message: <textarea className={styles.inputmes} name="message" placeholder="Enter message" maxLength="2000"></textarea>
     </label>
   </p>
   <div data-netlify-recaptcha="true"></div>
   <p>
-    <button className={styles.submit} type="submit">Send</button>
+    <button className={styles.submit} type="submit">Submit</button>
   </p>
 </form>
           <a className={styles.copyright}> <h2>© SHOSHANA YASWEN 2022</h2></a>
