@@ -2,7 +2,6 @@ Tic Tac Toe
 
 ![image](https://user-images.githubusercontent.com/57122318/176924301-f3b40631-3afc-4112-b7b4-a9592d3404b9.png)
 
---
 This is my [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
